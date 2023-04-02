@@ -26,12 +26,7 @@ A full subtractor is a combinational circuit that performs subtraction involving
 Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 
 ## Procedure
-
-
-
-Write the detailed procedure here 
-
-
+Connect the supply (+5V) to the circuit Switch ON the main switch If the output is 1,then the led glows.
 ## Program:
 ```
 /*
