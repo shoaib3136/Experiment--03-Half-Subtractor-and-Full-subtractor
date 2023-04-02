@@ -71,11 +71,11 @@ endmodule
 
 1.) For HALF SUBTRACTOR:
 
-![truth](./images/halfsubtractortruthtaable.png)
+![truth](./images/halfsubtractortruthtaable1.png)
 
 2.) For FULL SUBTRACTOR:
 
-![truth](./images/fullsubtractorlogic.png)
+![truth](./images/fullsubtractortruthtable1.png)
 
 
 ##  RTL realization
@@ -99,7 +99,7 @@ endmodule
 
 2.) For FULL SUBTRACOR:
 
-![time](./images/fulsubtractortime.png)
+![time](./images/fullsubtractortime.png)
 
 
 ## Result:
