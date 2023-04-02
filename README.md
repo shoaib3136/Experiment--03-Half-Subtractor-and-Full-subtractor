@@ -33,22 +33,74 @@ Write the detailed procedure here
 
 
 ## Program:
+```
 /*
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by:Shaik Shoaib Nawaz
+RegisterNumber:212222240094
 
+1.) For HALF SUBTRACTOR:
+module half_sub(a,b,diff,b_out);
+input a,b;
+wire d;
+output diff,b_out;
+xor (diff,a,b);
+not (d,a);
+and (b_out,d,b);
+endmodule
+
+
+
+2.)For FULL SUBTRACTOR:
+module full_sub(b_out,diff,a,b,c_in);
+output b_out,diff;
+input a,b,c_in;
+wire w1,w4,w5,w6;
+xor (diff,a,b,c_in);
+not (w1,a);
+and (w4,w1,b);
+and (w5,w1,c_in);
+and (w6,b,c_in);
+or (b_out,w4,w5,w6);
+endmodule
+*/
+```
 ## Output:
 
-## Truthtable
+## Truthtable:
 
+1.) For HALF SUBTRACTOR:
+
+![truth](./images/halfsubtractortruthtaable.png)
+
+2.) For FULL SUBTRACTOR:
+
+![truth](./images/fullsubtractorlogic.png)
 
 
 ##  RTL realization
+1.) For HALF SUBTRACTOR:
+
+![rtl](./images/halfsubtractorlogic.jpg)
 
 
-## Timing diagram 
+
+2.) For FULL SUBTRACTOR:
+
+![rtl](./images/fullsubtractorlogic.png)
+
+
+## Timing diagram:
+1.) For HALF SUBTRACTOR:
+
+![time](./images/halfsubtractortime.jpg)
+
+
+
+2.) For FULL SUBTRACOR:
+
+![time](./images/fulsubtractortime.png)
+
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
